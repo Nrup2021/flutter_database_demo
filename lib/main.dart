@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:my_database/database/ToDoDatabase.dart';
 import 'package:my_database/database/provider/database_provider.dart';
 import 'package:my_database/entity/to_do.dart';
+import 'package:my_database/treeview/MyTreeViewDemo.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  final database =
-      $FloorToDoDatabase.databaseBuilder("to_do_database.db").build();
-  runApp(MyApp(database));
+  // final database =
+  //     $FloorToDoDatabase.databaseBuilder("to_do_database.db").build();
+  // runApp(MyApp(database));
+  runApp(const MyTreeViewDemo());
 }
 
 class MyApp extends StatelessWidget {
